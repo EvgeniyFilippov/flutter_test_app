@@ -13,13 +13,32 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.deepOrangeAccent,
         ),
-        body: const Center(
-            child: Text('My test App', style: TextStyle(
-                fontSize: 20,
-                color: Colors.red,
-                fontFamily: ''
-            ),)
-        ),
+        body:
+            Container(
+              color: Colors.green,
+              child: Text('container'),
+              margin: EdgeInsets.symmetric(horizontal: 10.5, vertical: 50.0),
+              padding: EdgeInsets.all(20.5),
+            ),
+            // Image(
+            //   image: AssetImage('assets/image1.png'),
+            // )
+            // ElevatedButton.icon(
+            //   icon: Icon(Icons.ac_unit_rounded),
+            //   onPressed: () {  },
+            //   label: Text('El button'),
+            // )
+            // TextButton.icon(
+            //     style: ButtonStyle(
+            //       foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+            //       backgroundColor: MaterialStateProperty.all<Color>(Colors.deepOrangeAccent)
+            //     ),
+            //     onPressed: () {},
+            //     icon: Icon(Icons.ac_unit_sharp),
+            //     label: Text('Press'),
+            // ),
+            // Icon(Icons.settings, size: 45, color: Colors.amber),
+
         floatingActionButton: FloatingActionButton(
           onPressed: () { 
             print('clicked');
